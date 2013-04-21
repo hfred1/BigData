@@ -13,7 +13,7 @@ public class ReadWriteFlight {
 	
 	ArrayList<Integer> columnIndicies;
 	StringBuilder dataBuilder;
-	String filePath  = "C:"+File.pathSeparator+"Users"+File.pathSeparator+"Shawna/Documents/School/_3_Spring Quarter/MSiA 431_Big Data Analytics/HW2/FlightData/"; //using this method so that it is not OS dependant
+	String filePath  = "C:"+File.pathSeparator+"Users"+File.pathSeparator+"Shawna"+File.pathSeparator+"documents/School/_3_Spring Quarter/MSiA 431_Big Data Analytics/HW2/FlightData/"; //using this method so that it is not OS dependant
 	
 	
 	public static void main(String[] args) {
@@ -65,7 +65,7 @@ public class ReadWriteFlight {
 			
 		int incrementor = 0;
 		try {			
-			BufferedReader reader = new BufferedReader(new FileReader(file));			
+			BufferedReader reader = new BufferedReader(new FileReader(fileName));			
 			String row = reader.readLine();				
 			/**
 			 * looping through the data 
